@@ -1,0 +1,44 @@
+[Thu May 09 08:12:44.195311 2024] [mpm_prefork:notice] [pid 1287] AH00163: Apache/2.4.41 (Ubuntu) configured -- resuming normal operations
+[Thu May 09 08:12:44.195419 2024] [core:notice] [pid 1287] AH00094: Command line: '/usr/sbin/apache2'
+[Thu May 09 08:43:04.466163 2024] [mpm_prefork:notice] [pid 1287] AH00171: Graceful restart requested, doing restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.26.0.1. Set the 'ServerName' directive globally to suppress this message
+[Thu May 09 08:43:04.477863 2024] [mpm_prefork:notice] [pid 1287] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Thu May 09 08:43:04.477869 2024] [core:notice] [pid 1287] AH00094: Command line: '/usr/sbin/apache2'
+[Thu May 09 09:39:02.313866 2024] [mpm_prefork:notice] [pid 1287] AH00171: Graceful restart requested, doing restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.26.0.1. Set the 'ServerName' directive globally to suppress this message
+[Thu May 09 09:39:02.325813 2024] [ssl:warn] [pid 1287] AH01909: 172.26.0.1:443:0 server certificate does NOT include an ID which matches the server name
+[Thu May 09 09:39:02.325869 2024] [mpm_prefork:notice] [pid 1287] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Thu May 09 09:39:02.325872 2024] [core:notice] [pid 1287] AH00094: Command line: '/usr/sbin/apache2'
+[Thu May 09 09:58:09.599965 2024] [mpm_prefork:notice] [pid 1287] AH00171: Graceful restart requested, doing restart
+[Thu May 09 09:58:09.612343 2024] [core:error] [pid 1287] (EAI 2)Name or service not known: AH00547: Could not resolve host name _info-l3-rs.com_ -- ignoring!
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.43.247. Set the 'ServerName' directive globally to suppress this message
+[Thu May 09 09:58:09.621474 2024] [ssl:warn] [pid 1287] AH01906: info-l3-rs.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu May 09 09:58:09.621480 2024] [ssl:warn] [pid 1287] AH01909: info-l3-rs.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu May 09 09:58:09.621522 2024] [ssl:warn] [pid 1287] AH01909: info-l3-rs.com:443:1 server certificate does NOT include an ID which matches the server name
+[Thu May 09 09:58:09.621570 2024] [mpm_prefork:notice] [pid 1287] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Thu May 09 09:58:09.621572 2024] [core:notice] [pid 1287] AH00094: Command line: '/usr/sbin/apache2'
+[Thu May 09 10:01:43.423336 2024] [mpm_prefork:notice] [pid 1287] AH00171: Graceful restart requested, doing restart
+[Thu May 09 10:01:43.435312 2024] [core:error] [pid 1287] (EAI 2)Name or service not known: AH00547: Could not resolve host name _info-l3-rs.com_ -- ignoring!
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.43.247. Set the 'ServerName' directive globally to suppress this message
+[Thu May 09 10:01:43.446568 2024] [ssl:warn] [pid 1287] AH01906: info-l3-rs.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu May 09 10:01:43.446582 2024] [ssl:warn] [pid 1287] AH01909: info-l3-rs.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu May 09 10:01:43.446625 2024] [ssl:warn] [pid 1287] AH01909: info-l3-rs.com:443:1 server certificate does NOT include an ID which matches the server name
+[Thu May 09 10:01:43.446671 2024] [mpm_prefork:notice] [pid 1287] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Thu May 09 10:01:43.446673 2024] [core:notice] [pid 1287] AH00094: Command line: '/usr/sbin/apache2'
+[Thu May 09 10:04:00.274296 2024] [mpm_prefork:notice] [pid 1287] AH00171: Graceful restart requested, doing restart
+[Thu May 09 10:04:00.287214 2024] [core:error] [pid 1287] (EAI 2)Name or service not known: AH00547: Could not resolve host name _info-l3-rs.com_ -- ignoring!
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.43.247. Set the 'ServerName' directive globally to suppress this message
+[Thu May 09 10:04:00.300212 2024] [ssl:warn] [pid 1287] AH01906: info-l3-rs.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu May 09 10:04:00.300225 2024] [ssl:warn] [pid 1287] AH01909: info-l3-rs.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu May 09 10:04:00.300278 2024] [ssl:warn] [pid 1287] AH01909: info-l3-rs.com:443:1 server certificate does NOT include an ID which matches the server name
+[Thu May 09 10:04:00.300331 2024] [mpm_prefork:notice] [pid 1287] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Thu May 09 10:04:00.300334 2024] [core:notice] [pid 1287] AH00094: Command line: '/usr/sbin/apache2'
+[Thu May 09 10:11:58.395937 2024] [mpm_prefork:notice] [pid 1287] AH00171: Graceful restart requested, doing restart
+[Thu May 09 10:11:58.410261 2024] [core:error] [pid 1287] (EAI 2)Name or service not known: AH00547: Could not resolve host name _info-l3-rs.com_ -- ignoring!
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.43.247. Set the 'ServerName' directive globally to suppress this message
+[Thu May 09 10:11:58.422906 2024] [ssl:warn] [pid 1287] AH01906: info-l3-rs.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu May 09 10:11:58.422914 2024] [ssl:warn] [pid 1287] AH01909: info-l3-rs.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu May 09 10:11:58.422952 2024] [ssl:warn] [pid 1287] AH01909: info-l3-rs.com:443:1 server certificate does NOT include an ID which matches the server name
+[Thu May 09 10:11:58.423008 2024] [mpm_prefork:notice] [pid 1287] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Thu May 09 10:11:58.423009 2024] [core:notice] [pid 1287] AH00094: Command line: '/usr/sbin/apache2'
+[Thu May 09 10:44:31.205228 2024] [mpm_prefork:notice] [pid 1287] AH00169: caught SIGTERM, shutting down

@@ -1,0 +1,45 @@
+- name: Installation et configuration d'Apache2 avec Ansible
+
+  hosts: webservers
+  
+  become: true
+  tasks:
+    - name: Installation d'Apache2
+      apt:
+        name: apache2
+        state: present
+
+    - name: Activation du démarrage automatique pour Apache2
+
+      systemd:
+        name: apache2
+        enabled: yes
+        state: started
+
+    - name: Copie du fichier de configuration du Virtual Host Apache
+      copy:
+        src: "/home/patrice/Desktop/INFOL3/SEM2/INF362/EC1/TPE4-21T2894_NEUSSI/l3-21T2894.conf"
+        dest: "/etc/apache2/sites-available/"
+      notify: Restart Apache2
+
+    - name: Copie du  fichier README.md dans site
+      copy:
+        src: "/home/patrice/Desktop/INFOL3/SEM2/INF362/EC1/TPE4-21T2894_NEUSSI/README.md"
+        dest: "/home/vagrant/mon-site/"
+        
+    - name: Copie du  fichier mon-site-access.log dans site
+      copy:
+        src: "/home/patrice/Desktop/INFOL3/SEM2/INF362/EC1/TPE4-21T2894_NEUSSI/mon-site-access.log"
+        dest: "/home/vagrant/mon-site/"
+
+    - name: Activation du Virtual Host
+      command: "a2ensite l3-21T2894.cm.conf"
+      args:
+        creates: "/etc/apache2/sites-enabled/l3-21T2894.cm.conf"
+      notify: Restart Apache2
+
+  handlers:
+    - name: Restart Apache2
+      service:
+        name: apache2
+        state: restarted
