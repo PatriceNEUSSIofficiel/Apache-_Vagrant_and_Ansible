@@ -1,0 +1,15 @@
+<VirtualHost *:80>
+    ServerName patrice.propentatech.com
+    ServerAlias www.patrice.propentatech.com
+    ServerAdmin webmaster@patrice.propentatech.com
+    DocumentRoot /var/www/patrice.propentatech.com
+    
+    <Directory /var/www/patrice.propentatech.com>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+    
+    ErrorLog ${APACHE_LOG_DIR}/patrice_error.log
+    CustomLog ${APACHE_LOG_DIR}/patrice_access.log combined
+</VirtualHost>

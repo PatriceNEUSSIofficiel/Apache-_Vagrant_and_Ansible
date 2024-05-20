@@ -1,0 +1,36 @@
+---
+- name: Configure Apache
+  hosts: webserver
+  become: yes
+  
+  tasks:
+    - name: Install Apache
+      apt:
+        name: apache2
+        state: present
+      become: yes
+
+    - name: Copy Apache configuration file
+      template:
+        src: patrice.propentatech.com.conf.j2
+        dest: /etc/apache2/sites-available/patrice.propentatech.com.conf
+        owner: root
+        group: root
+        mode: '0644'
+      notify: Restart Apache
+
+    - name: Enable site
+      apache2_module:
+        state: present
+        name: rewrite
+      become: yes
+
+    - name: Enable site
+      command: a2ensite patrice.propentatech.com.conf
+      become: yes
+
+  handlers:
+    - name: Restart Apache
+      service:
+        name: apache2
+        state: restarted
